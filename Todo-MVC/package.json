@@ -1,0 +1,63 @@
+{
+  "name": "todomvc-vue",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blacksonic/todomvc-vue.git"
+  },
+  "scripts": {
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit --recursive 'src/**/*.spec.js'",
+    "test:e2e": "vue-cli-service test:e2e --headless",
+    "lint": "vue-cli-service lint --no-fix",
+    "format": "prettier --write 'src/**/*.{js,vue}'",
+    "start": "vue-cli-service serve",
+    "test": "npm run test:unit",
+    "vite": "vite",
+    "vite:build": "vite build"
+  },
+  "dependencies": {
+    "core-js": "^3.22.0",
+    "todomvc-app-css": "^2.4.2",
+    "uuid": "^8.3.2",
+    "vue": "^2.6.14",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
+    "@vue/cli-plugin-babel": "^5.0.4",
+    "@vue/cli-plugin-e2e-cypress": "^5.0.4",
+    "@vue/cli-plugin-eslint": "^5.0.4",
+    "@vue/cli-plugin-unit-mocha": "^5.0.4",
+    "@vue/cli-service": "^5.0.4",
+    "@vue/test-utils": "^1.1.2",
+    "autoprefixer": "^10.4.4",
+    "chai": "^4.3.6",
+    "cypress": "^9.5.4",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "postcss": "^8.4.12",
+    "prettier": "^2.6.2",
+    "sinon": "^13.0.2",
+    "sinon-chai": "^3.7.0",
+    "vite": "^2.9.5",
+    "vite-plugin-vue2": "^1.9.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 firefox version"
+  ],
+  "engines": {
+    "node": "14.15.3"
+  }
+}
