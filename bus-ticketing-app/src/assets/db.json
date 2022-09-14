@@ -1,0 +1,150 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "description": "Porto - Bus Terminal"
+    },
+    {
+      "id": 2,
+      "description": "Lisbon - Bus Terminal"
+    },
+    {
+      "id": 3,
+      "description": "Madrid - Bus Terminal"
+    },
+    {
+      "id": 4,
+      "description": "Barcelona - Bus Terminal"
+    },
+    {
+      "id": 5,
+      "description": "Berlin - Bus Terminal"
+    }
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "from_location": 2,
+      "to_location": 1,
+      "departure_date": "2020-04-25 21:00",
+      "ticket_price": 60
+    },
+    {
+      "id": 2,
+      "from_location": 2,
+      "to_location": 3,
+      "departure_date": "2020-04-25 21:00",
+      "ticket_price": 65
+    }
+  ],
+  "seats": [
+    {
+      "id": 1,
+      "trip_id": 1,
+      "seat_number": 1,
+      "seat_type": "Single",
+      "seat_location": "Window",
+      "sex": "M",
+      "occupancy": 1
+    },
+    {
+      "id": 2,
+      "trip_id": 1,
+      "seat_number": 2,
+      "seat_type": "Couple",
+      "seat_location": "Aisle",
+      "sex": "F",
+      "occupancy": 1
+    },
+    {
+      "id": 3,
+      "trip_id": 1,
+      "seat_number": 3,
+      "seat_type": "Couple",
+      "seat_location": "Window",
+      "sex": "M",
+      "occupancy": 1
+    },
+    {
+      "id": 4,
+      "trip_id": 1,
+      "seat_number": 4,
+      "seat_type": "Single",
+      "seat_location": "Window",
+      "cinsiyet": "",
+      "occupancy": 0
+    },
+    {
+      "id": 5,
+      "trip_id": 1,
+      "seat_number": 5,
+      "seat_type": "Couple",
+      "seat_location": "Aisle",
+      "cinsiyet": "",
+      "occupancy": 0
+    },
+    {
+      "id": 6,
+      "trip_id": 1,
+      "seat_number": 6,
+      "seat_type": "Couple",
+      "seat_location": "Window",
+      "cinsiyet": "",
+      "occupancy": 0
+    },
+    {
+      "id": 7,
+      "trip_id": 1,
+      "seat_number": 7,
+      "seat_type": "Single",
+      "seat_location": "Window",
+      "cinsiyet": "",
+      "occupancy": 0
+    },
+    {
+      "id": 8,
+      "trip_id": 1,
+      "seat_number": 8,
+      "seat_type": "Couple",
+      "seat_location": "Aisle",
+      "cinsiyet": "",
+      "occupancy": 0
+    },
+    {
+      "id": 9,
+      "trip_id": 1,
+      "seat_number": 9,
+      "seat_type": "Couple",
+      "seat_location": "Window",
+      "cinsiyet": "",
+      "occupancy": 0
+    },
+    {
+      "id": 10,
+      "trip_id": 1,
+      "seat_number": 10,
+      "seat_type": "Single",
+      "seat_location": "Window",
+      "cinsiyet": "",
+      "occupancy": 1
+    },
+    {
+      "id": 11,
+      "trip_id": 1,
+      "seat_number": 11,
+      "seat_type": "Couple",
+      "seat_location": "Aisle",
+      "cinsiyet": "",
+      "occupancy": 0
+    },
+    {
+      "id": 12,
+      "trip_id": 1,
+      "seat_number": 12,
+      "seat_type": "Couple",
+      "seat_location": "Window",
+      "cinsiyet": "",
+      "occupancy": 0
+    }
+  ]
+}
