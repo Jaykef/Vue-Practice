@@ -14,55 +14,15 @@
 
       <div class="cart">Cart({{ cart }})</div>
 
-      <div class="product-display">
-        <div class="product-container">
-          <div class="product-image">
-            <img 
-              :src="image"
-              :class="{ 'out-of-stock-img': !inStock }"
-              alt=""
-            >
-          </div>
-          <div class="product-info">
-            <h1>{{title}}</h1>
-            <p v-if="onSale">{{this.brand + product}} is on sale</p>
-            <p v-if="inStock">In Stock</p>
-            <p v-else>Out of Stock</p>
-            Description:
-            <ul>
-              <li v-for="detail in details">{{detail}}</li>
-            </ul>
-            <ul>
-              <li v-for="size in sizes">{{size}}</li>
-            </ul>
-            <div v-for="(variant, index) in variants" :key="variant.id" @mouseover="updateVariant(index)" class="color-circle"
-            :style="{ backgroundColor: variant.color }">
-            </div><br>
-            <button 
-              class="button" 
-              :class="{ disabledButton: !inStock }"
-              v-on:click="removeFromCart"
-              :disabled="!inStock || cart <= 0"
-              >-</button>
-            <div class="cart_no">{{ cart }}</div>
-            <button 
-              class="button" 
-              :class="{ disabledButton: !inStock }"
-              v-on:click="addToCart"
-              :disabled="!inStock"
-              >+</button><br>
-            <button 
-              :href="buyURL" 
-              class="buy_button"
-              :class="{ disabledButton: !inStock }"
-              >Buy</button>
-          </div>
-        </div>
-      </div>
+      <product-display :premium="premium"></product-display>
+      
     </div>
 
     <!-- Import App -->
     <script src="./main.js"></script>
+    <!-- Import Components -->
+    <script src="./components/productDisplay.js"></script>
+  <script src="./components/productDetails.js"></script>
     <!-- Mount App -->
     <script>
       const mountedApp = app.mount('#app');
