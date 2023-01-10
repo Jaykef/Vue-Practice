@@ -1,0 +1,156 @@
+body {
+  background-image: linear-gradient(60deg, #c45e10 0%, #fb9696 100%);
+  color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.tx-green-1 {
+  color: #75CC65;
+  font-weight: 600;
+}
+
+.wrapper-stepper {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.09);
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 660px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 24px;
+}
+.stepper-progress {
+  position: absolute;
+  background-color: #C5C5C5;
+  height: 2px;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.stepper-progress-bar {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #75CC65;
+  transition: all 500ms ease;
+}
+
+.stepper-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #C5C5C5;
+  transition: all 500ms ease;
+}
+.stepper-item-counter {
+  height: 68px;
+  width: 68px;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+  border: 2px solid #C5C5C5;
+  position: relative;
+}
+.stepper-item-counter .icon-success {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  width: 24px;
+  transition: all 500ms ease;
+}
+.stepper-item-counter .number {
+  font-size: 22px;
+  transition: all 500ms ease;
+}
+.stepper-item-title {
+  position: absolute;
+  font-size: 14px;
+  bottom: -24px;
+}
+
+.stepper-item.success .stepper-item-counter {
+  border-color: #75CC65;
+  background-color: #c8ebc1;
+  color: #fff;
+  font-weight: 600;
+}
+.stepper-item.success .stepper-item-counter .icon-success {
+  opacity: 1;
+  transform: scale(1);
+}
+.stepper-item.success .stepper-item-counter .number {
+  opacity: 0;
+  transform: scale(0);
+}
+.stepper-item.success .stepper-item-title {
+  color: #75CC65;
+}
+
+.stepper-item.current .stepper-item-counter {
+  border-color: #75CC65;
+  background-color: #75CC65;
+  color: #fff;
+  font-weight: 600;
+}
+.stepper-item.current .stepper-item-title {
+  color: #818181;
+}
+
+.stepper-pane {
+  color: #333;
+  text-align: center;
+  padding: 120px 60px;
+  box-shadow: 0px 2px 8px 3px rgb(0 0 0 / 9%);
+  margin: 40px 0;
+  border-radius: 15px;
+}
+
+.controls {
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+  border: 1px solid;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  line-height: 1.5;
+  transition: all 150ms;
+  border-radius: 15px;
+  width: fit-content;
+  font-size: 0.75rem;
+  color: #333;
+  background-color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+.btn:disabled {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.btn--green-1 {
+  background-color: #75CC65;
+  border-color: #75CC65;
+  color: #fff;
+  margin-left: auto;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
